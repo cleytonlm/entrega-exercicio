@@ -11,13 +11,9 @@ public class Funcionario extends Pessoa {
         this.numeroMatricula = numeroMatricula;
     }
 
-        public void exibirDados (){
-            System.out.println(this.getNome() + " " + this.getIdade() + " " + this.getCidadeNascimento() + " " + numeroMatricula );
-        }
+    public Funcionario(String nome, Integer idade, String cidadeNascimento, Integer numeroMatricula) {
+        super(nome, idade, cidadeNascimento);
+        this.numeroMatricula = numeroMatricula;
 
-         public Funcionario(String nome, Integer idade, String cidadeNascimento, Integer numeroMatricula) {
-            super(nome, idade, cidadeNascimento);
-            this.numeroMatricula = numeroMatricula;
-        }
-
+    }
 }

@@ -35,4 +35,7 @@ public class Pessoa {
     public void setCidadeNascimento(String cidadeNascimento) {
         this.cidadeNascimento = cidadeNascimento;
     }
+    public void exibirDados (){
+        System.out.println(this.getNome() + " " + this.getIdade() + " " + this.getCidadeNascimento() );
+    }
 }
